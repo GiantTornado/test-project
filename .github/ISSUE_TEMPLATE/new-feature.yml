@@ -1,36 +1,41 @@
-name: New feature
+name: New Feature
 description: Suggest or request a new feature
 labels: ["enhancement"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Please fill out the sections below to properly describe the new feature you are suggesting.
   - type: textarea
     id: description
     attributes:
-      label: Describe the feature
-      placeholder: A button in the screen X that allows to do Y
+      label: "#### Description"
+      description: "A clear and concise description of what the issue is about."
+      placeholder: "Add a caching mechanism to improve API response time by reducing redundant database queries."
     validations:
       required: true
+
   - type: textarea
-    id: rationale
+    id: screenshots
     attributes:
-      label: It should be implemented because
-      placeholder: It will allow to do Y that is needed for Z
+      label: "#### Screenshots"
+      description: "Attach screenshots if applicable."
+      placeholder: "Attach mockups, wireframes, or design references to illustrate the proposed feature."
+
   - type: textarea
-    id: context
+    id: files
     attributes:
-      label: Additional context
+      label: "#### Relevant Files"
+      description: "List key files related to this issue."
+      placeholder: "`src/api/userService.js`, `src/database/migrations/20240214_add_users_table.sql`"
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "#### Tasks"
+      description: "Break down this issue into actionable development tasks."
       placeholder: |
-        Add any other context or screenshots about the feature request here.
-  - type: dropdown
-    id: assign
-    attributes:
-      label: "Would you like to work on this issue?"
-      options:
-        - "Yes"
+        - [ ] Implement API endpoint at `GET /api/v1/reports`
+        - [ ] Add unit tests in `tests/ReportsTest.php`
+        - [ ] Update frontend component `ReportTable.vue` to display new data
+
   - type: markdown
     attributes:
       value: |
-        Thanks for your suggestion! Let's see together if it can be implemented.
+        Don't forget to use relevant labels and milestones.
