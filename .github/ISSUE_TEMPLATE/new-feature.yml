@@ -5,37 +5,32 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: "#### Description"
-      description: "A clear and concise description of what the issue is about."
-      placeholder: "Add a caching mechanism to improve API response time by reducing redundant database queries."
+      label: "Description"
+      description: "Provide a clear and concise description of what this feature request is about."
+      placeholder: "Example: Add a caching mechanism to improve API response time by reducing redundant database queries."
     validations:
       required: true
 
   - type: textarea
     id: screenshots
     attributes:
-      label: "#### Screenshots"
-      description: "Attach screenshots if applicable."
-      placeholder: "Attach mockups, wireframes, or design references to illustrate the proposed feature."
+      label: "Design References"
+      description: "Attach mockups, wireframes, or design references to illustrate the proposed feature."
+      placeholder: "Example: Attach a Figma link or wireframe image showing how the feature should look."
 
   - type: textarea
     id: files
     attributes:
-      label: "#### Relevant Files"
-      description: "List key files related to this issue."
-      placeholder: "`src/api/userService.js`, `src/database/migrations/20240214_add_users_table.sql`"
+      label: "Relevant Files"
+      description: "List key files related to this feature to help contributors navigate the project."
+      placeholder: "Example: `src/api/userService.js`, `src/database/migrations/20240214_add_users_table.sql`"
 
   - type: textarea
     id: tasks
     attributes:
-      label: "#### Tasks"
+      label: "Tasks"
       description: "Break down this issue into actionable development tasks."
       placeholder: |
         - [ ] Implement API endpoint at `GET /api/v1/reports`
         - [ ] Add unit tests in `tests/ReportsTest.php`
-        - [ ] Update frontend component `ReportTable.vue` to display new data
-
-  - type: markdown
-    attributes:
-      value: |
-        Don't forget to use relevant labels and milestones.
+        - [ ] Update frontend component `ReportTable.vue` to display new data"
