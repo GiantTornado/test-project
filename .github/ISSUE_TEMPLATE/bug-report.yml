@@ -5,40 +5,70 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill out the sections below to help everyone identify and fix the bug
+        ## 🐛 Bug Report  
+        Please fill out the details below to help us diagnose and fix the issue efficiently.
+
   - type: textarea
     id: description
     attributes:
-      label: Describe your issue
-      placeholder: When I click here this happens
+      label: "Description"
+      description: "Provide a clear and concise description of the issue."
+      placeholder: "Example: When I click the 'Save' button on the settings page, nothing happens."
     validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
+      label: "Steps to Reproduce"
+      description: "Provide the steps to reproduce this issue."
       placeholder: |
-        1. Go to page X
-        2. Click here
-        3. Click there
+        1. Go to 'http://localhost:3000/settings'
+        2. Click the 'Save' button
+        3. Observe that no changes are saved
     validations:
       required: true
+
   - type: textarea
     id: expected
     attributes:
-      label: What was the expected result?
-      placeholder: I expected this to happen
+      label: "Expected Behavior"
+      description: "What did you expect to happen?"
+      placeholder: "Example: The 'Save' button should update user settings and show a success message."
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened instead?"
+      placeholder: "Example: The button does nothing, and there are no error messages."
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Provide details about the environment where the issue occurred."
+      placeholder: |
+        - OS: Windows 11 / macOS Ventura / Ubuntu 22.04
+        - Browser: Chrome 120.0.0 / Firefox 105
+        - Device: iPhone 14 / Windows PC
+        - Version: v1.2.3
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs & Console Errors"
+      description: "Paste any relevant logs, error messages, or stack traces."
+      placeholder: |
+        Example:
+        ```
+        Uncaught TypeError: Cannot read properties of undefined
+        at settings.js:45
+        ```
+
   - type: textarea
     id: screenshots
     attributes:
-      label: Put here any screenshots or videos (optional)
-  - type: dropdown
-    id: assign
-    attributes:
-      label: "Would you like to work on this issue?"
-      options:
-        - "Yes"
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for reporting this issue! We will get back to you as soon as possible.
+      label: "Screenshots or Videos (Optional)"
+      description: "Attach screenshots or videos that show the issue."
+      placeholder: "Example: Drag and drop images or paste a link to a screen recording."

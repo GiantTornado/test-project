@@ -1,0 +1,15 @@
+name: Test
+description: testing
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the sections below to help everyone identify and fix the bug
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your issue
+      placeholder: When I click here this happens
+    validations:
+      required: true

@@ -1,0 +1,42 @@
+name: Feature Request
+description: Suggest or request a new feature
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Feature Request  
+        Please fill out the details below to help us understand and implement your feature request efficiently.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Feature Overview"
+      description: "Provide a clear and concise description of what this feature request is about."
+      placeholder: "Example: Implement a role-based access control system to manage user permissions more effectively."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Design References"
+      description: "Attach mockups, wireframes, or links to design references for this feature."
+      placeholder: "Example: Attach a Figma link or wireframe image showing the expected UI changes."
+
+  - type: textarea
+    id: files
+    attributes:
+      label: "Relevant Files"
+      description: "List key files or components related to this feature to help contributors navigate the project."
+      placeholder: "Example: `src/api/authMiddleware.js`, `src/components/UserRoles.vue`"
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: "Implementation Plan"
+      description: "Break down this feature request into actionable development tasks."
+      placeholder: |
+        - [ ] Implement API route `POST /api/v1/roles`
+        - [ ] Add unit tests in `tests/RoleAccessTest.php`
+        - [ ] Create UI component `RoleSelector.vue` for admin panel
